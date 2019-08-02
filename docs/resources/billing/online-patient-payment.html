@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.charmtracker.com/resources/billing/online-patient-payment.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:01:57 GMT -->
+<head>
+
+
+
+ 
+
+<title>ChARM EHR - Online Patient Payment</title>
+<meta name="description" content="ChARM EHR enables patients to pay for their invoices online from their patient portal, at the comfort of their home">
+<meta name="keywords" content="Card Payment, Patient Payment, Online Patient Payment">
+	
+<link rel="SHORTCUT ICON" href="../../images/favicon.ico"/>
+<link rel="stylesheet" type="text/css"  href="../css/resources.css"/>
+
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="http://www.googletagmanager.com/ns.html?id=GTM-HDQM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-HDQM');</script> 
+<!-- End Google Tag Manager -->
+<header>
+  <div class="cm-wd">
+    <a href="../index.html"><img width="100" src="../images/logo.png" /></a>
+    <div class="fl hd">Resource Center</div>
+    <div class="fr">
+      <a target="_blank" href="https://twitter.com/charmtracker"><div class="t-icon"></div></a>
+      <a target="_blank" href="https://www.facebook.com/charmtracker"><div class="f-icon"></div></a>
+    </div>
+  </div>
+</header>
+<div class="header">
+  <div class="cm-wd">
+      	<h1>Billing</h1>
+		<div class="search-but">
+		<form id="cse-search-box" action="https://charmtracker.com/resources/search-results.html">
+		<div class="search-icon"></div>
+		<input type="text" placeholder="Search..." value="" class="newsearchbox fl" name="q">
+		</form>
+		</div>
+  </div>
+</div>
+ 
+<div class="cmfw content">
+     
+  <div class="cm-wd">	
+    <div class="content-list">
+      <ul id="menubar">
+	    <li id="bar1"><a title="Configure Bill Settings" href="bill-settings.html">Configure Bill Settings</a></li>
+		<li id="bar2"><a title="Configure Procedure Codes" href="procedure-codes.html">Configure Procedure Codes</a></li>
+		<li id="bar3"><a title="Configure Billing Templates" href="billing-templates.html">Configure Billing Templates</a></li>
+		<li id="bar4"><a title="Configure Payers" href="payers.html">Configure Payers</a></li>
+		<li id="bar5"><a title="Configure Billing Providers" href="billing-providers.html">Configure Billing Providers</a></li>
+		<li id="bar6"><a title="Generating Bills" href="generating-bills.html">Generating Bills</a></li>
+		<li id="bar7"><a title="Invoices" href="invoices.html">Invoices</a></li>
+		<li id="bar8"><a title="Receipts" href="receipts.html">Receipts</a></li>
+		<li id="bar9"><a title="Claims" href="claims.html">Claims</a></li>		
+        <li id="bar10"><a title="Bluefin Payment Gateway" href="bluefin-payment-gateway.html">Bluefin Payment Gateway</a></li>
+        <li id="bar11"><a title="Online Patient Payment" href="online-patient-payment.html">Online Patient Payment</a></li>
+      </ul>
+      <div class="leader">
+	  	<div class="cmfw" align="center">
+<div class="breadcrumb"><a class="link" href="../index.html">Home</a> &gt; <a class="link" href="../ehr-user-guide.html"> EHR User Guide</a> &gt; <span>Billing</span></div>
+</div>
+	  	<div class="cmfw">
+<h2>Online Patient Payment</h2>
+<p>ChARM EHR now allows you to share invoices and receipts to Patient Portal there by simplifying the process of collecting payments from Patient or Care Giver. Instead of downloading the attachment, Patient or Care Giver can see invoices and receipts from Patient Portal. In addition, if you are using our Bluefin Payment Gateway Integration, Patient or Care Giver can pay outstanding invoices from the Patient Portal making collections seamless and efficient. This document will walk you through the steps for sharing invoices to Patient Portal and making payment for outstanding invoices from Patient Portal.</p>
+<p><em><strong>Note :</strong> If your practice has not subscribed for Bluefin Payment Gateway integration and you wish do so now, please contact us at <a class="link" href="mailto:support@charmehr.com">support@charmehr.com</a> to get your gateway merchant account.</em></p>
+<p><strong>Supported functionalities include</strong></p>
+<ul class="list">
+<li><a class="link" href="#send-invoice">Send Invoice (EHR)</a><ol>
+<li><a class="link" href="#send-invoice-to-patient-phr-account">Send Invoice to Patient PHR Account</a></li>
+<li><a class="link" href="#send-invoice-to-patient-email-address">Send Invoice to Patient Email Address</a></li>
+<li><a class="link" href="#send-invoices-in-bulk">Send Invoices in Bulk</a></li>
+</ol></li>
+<li><a class="link" href="#make-payment">Make Payment</a><ol>
+<li><a class="link" href="#make-payment-from-phr">Make Payment From PHR</a></li>
+<li><a class="link" href="#make-payment-from-email">Make Payment From Email</a></li>
+</ol></li>
+</ul>
+</div>
+<div class="cmfw mar-bot30"><a name="send-invoice"></a>
+<h2>Send Invoice</h2>
+<p>Using 'Send invoice' functionality, provider can share an invoice to patient for the services rendered. Steps for sending the invoice to Patient Portal.</p>
+<ol>
+<li>Go to 'Billing' &gt; 'Invoices' and click on the invoice to be sent to patient, then click 'Send Invoice'
+<p style="width: 70%; margin: 0 30% 0 0; float: left; text-align: center;">(or)</p>
+</li>
+<li>From the 'Billing' &gt; 'Invoices' List View, Click on the 'Send Invoice' option available under action drop down menu (see below). <img class="mar-tb10" title="Send Invoice Option 1" src="images/send-invoice-option1.png" alt="Send Invoice Option 1" width="100%" /> <img class="mar-tb10" title="Send Invoice Option 2" src="images/send-invoice-option2.png" alt="Send Invoice Option 2" width="100%" /></li>
+<li>In the 'Send Invoice' view, you have two options to choose from
+<ul class="list">
+<li>Send Invoice to Patient PHR account with message notification</li>
+<li>Send Invoice to Patient email address with Invoice / Superbill attached and password protected</li>
+</ul>
+</li>
+</ol><a name="send-invoice-to-patient-phr-account"></a>
+<h3><strong>Send Invoice to Patient PHR Account</strong></h3>
+<ol>
+<li>If the patient has PHR account, Option i) is selected by default.</li>
+<li>Select 'Allow payment through PHR'. Enter the amount to be paid in the 'Amount' field. By default it will show the invoice due.</li>
+<li>Enter the 'Subject' and choose the invoice format to send. Edit the message content, if needed. Click 'Send'. Invoice will be shared with Patient Portal. <img class="mar-tb10" title="Send Invoice to PHR" src="images/send-invoice-to-phr.png" alt="Send Invoice to PHR" width="100%" /></li>
+</ol><a name="send-invoice-to-patient-email-address"></a>
+<h3><strong>Send Invoice to Patient Email Address</strong></h3>
+<ol>
+<li>Choose Option 2 for sending invoice by email</li>
+<li>Select 'Enable Online Payment' check box. Enter the amount to be paid in the 'Amount' field. By default it will show the total invoice due. Choose 'Beneficiary' account (Bluefin merchant account) to which amount to be transferred.</li>
+<li>Enter 'Subject' and choose the attachment to be sent.</li>
+<li>Edit the message content, if needed. We have provided <strong>${Payment URL}</strong> placeholder which can be embedded into the email content. This placeholder will be replaced by an URL link in the email sent to the patient. Patient can click on the link to make the payment.</li>
+<li>You can edit the "Send Invoice - Email" template from "Settings &gt; Templates" section to include the <strong>${Payment URL}</strong> placeholder</li>
+<li>Click 'Send'. Invoice will be sent as an email to the patient's email address. <img class="mar-tb10" title="Send Invoice to Patient Email Address" src="images/send-invoice-to-patient-email.png" alt="Send Invoice to Patient Email Address" width="100%" /></li>
+</ol><a name="send-invoices-in-bulk"></a>
+<h3><strong>Send Invoices in Bulk</strong></h3>
+<ol>
+<li>Go to 'Billing' &gt; 'Invoices'. Select all the invoices to be sent. Choose 'Send Invoice' &gt; 'To Email'.<img class="mar-tb10" title="Send Multiple Invoice to Patient" src="images/send-multiple-invoice-to-patient.png" alt="Send Multiple Invoice to Patient" width="100%" /></li>
+<li>Select 'Enable Online Payment'. Enter the amount to be paid in the 'PaymentRequest' column for each invoice. By default it will show the invoice due. Choose 'Beneficiary' account to which amount to be transferred.<img class="mar-tb10" title="Send Multiple Invoice to Patient" src="images/send-multiple-invoice-to-patient1.png" alt="Send Multiple Invoice to Patient" width="100%" /></li>
+<li>Enter 'Subject' and choose the attachment to send along with the mail. Edit the message content, if needed. Click 'Send'. Invoices will be sent to the Email given.</li>
+</ol>
+<p><em><strong>Note :</strong> Please edit your 'Send Invoice' message template to include the steps for making payment from Patient Portal. In PHR, option to make payment will be shown only for the invoices with due.</em></p>
+</div>
+<div class="cmfw mar-bot30"><a name="make-payment"></a>
+<h2>Make Payment</h2>
+<a name="make-payment-from-phr"></a>
+<h3><strong>Make Payment From PHR</strong></h3>
+<p>When the invoice is shared to Patient Portal, it will be listed in 'Billing' &gt; 'Invoices' section. Please follow the steps given below for paying the bills.</p>
+<ol>
+<li>Log in to ChARM PHR. Click on 'Billing' section. <img class="mar-tb10" title="Patient Portal Billing" src="images/phr-billing.png" alt="Patient Portal Billing" width="100%" /></li>
+<li>In Billing section you have two tabs
+<ul class="list">
+<li>Invoices - Shared invoices will be listed here.</li>
+<li>Receipts - Receipts for payment made from Patient Portal will be listed here.</li>
+</ul>
+</li>
+<li>Click on the invoice to be paid. Invoice details view will be shown. <img class="mar-tb10" title="Invoice List For Patient Portal" src="images/phr-invoice-list.png" alt="Invoice List For Patient Portal" width="100%" /></li>
+<li>For invoices with due 'Make Payment' option will be available on the top. <img class="mar-tb10" title="Invoice Detail View For Patient Portal" src="images/phr-invoice-detail-view.png" alt="Invoice Detail View For Patient Portal" width="100%" /></li>
+<li>Click on 'Make Payment' to proceed to the payment view. Enter your card details on the form.</li>
+<li>Click 'Make Payment'. Now the page will be redirected. <img class="mar-tb10" style="margin-right: 35%;" title="Make Payment From Patient Portal" src="images/phr-make-payment.png" alt="Make Payment From Patient Portal" width="65%" /></li>
+</ol><a name="make-payment-from-email"></a>
+<h3><strong>Make Payment From Email</strong></h3>
+<ol>
+<li>Patient will receive the invoice in their email. Payment link will be available in the email content for patients to pay online. ( If the invoice due is zero then the payment url will not be available). Click on the link available in the email.</li>
+<li>Make Payment form will be shown. Enter your credit card details. All the fields are mandatory.</li>
+<li>Click 'Make Payment' button. Request will be made to payment gateway for processing. Upon successful transaction, receipt will be shown. A copy of the receipt will be sent to the patient by Email.</li>
+</ol>
+<p><em><strong>Note :</strong> Your credit card details are not stored in ChARM, but just a reference provided by the Bluefin Payment Gateway.</em></p>
+<p><em>Please do not close or refresh the page. On successful transaction, your card will be charged with the due amount. Receipt for the payment will be shown and the invoice will be updated automatically.</em></p>
+<p><em>In case of any issues, please get back to your practice staff.</em></p>
+<p><em><br /> </em></p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="cm-wd">
+    <span>&copy;<span id="header" class="mar0"></span> MedicalMine Inc. All rights reserved.</span>
+  </div>
+</footer>
+<script type="text/javascript" src="../../js/me-jquery.js"></script>
+<script>
+	$("#header").text( (new Date).getFullYear() );
+</script>
+<script>
+$('#bar11').addClass('selected');
+</script>
+
+</body>
+
+<!-- Mirrored from www.charmtracker.com/resources/billing/online-patient-payment.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:02:00 GMT -->
+</html>

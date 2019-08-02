@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.charmtracker.com/resources/inventory/manage-inventory.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:00:51 GMT -->
+<head>
+
+
+
+ 
+
+<title>ChARM EHR - Manage Inventory</title>
+<meta name="description" content="ChARM EHR - Manage Inventory">
+<meta name="keywords" content="Manage Inventory, Medical Inventory Management, Manage Stock">
+	
+<link rel="SHORTCUT ICON" href="../../images/favicon.ico"/>
+<link rel="stylesheet" type="text/css"  href="../css/resources.css"/>
+
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="http://www.googletagmanager.com/ns.html?id=GTM-HDQM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-HDQM');</script> 
+<!-- End Google Tag Manager -->
+<header>
+  <div class="cm-wd">
+    <a href="../index.html"><img width="100" src="../images/logo.png" /></a>
+    <div class="fl hd">Resource Center</div>
+    <div class="fr">
+      <a target="_blank" href="https://twitter.com/charmtracker"><div class="t-icon"></div></a>
+      <a target="_blank" href="https://www.facebook.com/charmtracker"><div class="f-icon"></div></a>
+    </div>
+  </div>
+</header>
+<div class="header">
+  <div class="cm-wd">
+      	<h2>Inventory</h2>	  
+		<div class="search-but">
+		<form id="cse-search-box" action="https://charmtracker.com/resources/search-results.html">
+		<div class="search-icon"></div>
+		<input type="text" placeholder="Search..." value="" class="newsearchbox fl" name="q">
+		</form>
+		</div>
+  </div>
+</div>
+ 
+<div class="cmfw content">
+     
+  <div class="cm-wd">	
+    <div class="content-list">
+      <ul id="menubar">
+        <li id="bar1"><a title="Manage Inventory" href="manage-inventory.html">Manage Inventory</a></li>
+        <li id="bar2"><a title="Category" href="category.html">Category</a></li>
+		<li id="bar3"><a title="Suppliers" href="suppliers.html">Suppliers</a></li>
+		<li id="bar4"><a title="Reports" href="reports.html">Reports</a></li>
+      </ul>
+      <div class="leader">
+	  	<div class="cmfw" align="center">
+<div class="breadcrumb"><a class="link" href="../index.html">Home</a> &gt; <a class="link" href="../ehr-user-guide.html"> EHR User Guide</a> &gt; <span>Inventory</span></div>
+</div>
+	  	<div class="cmfw">
+<h2>Manage Inventory</h2>
+<ul class="list">
+<li><a class="link" href="#add-inventory">Add Inventory</a></li>
+<li><a class="link" href="#import-inventory">Import Inventory</a></li>
+<li><a class="link" href="#export-inventory-list">Export Inventory List</a></li>
+<li><a class="link" href="#view-stock-detail">View Stock Detail</a></li>
+<li><a class="link" href="#edit-stock-detail">Edit Stock Detail</a></li>
+<li><a class="link" href="#manage-damaged-stock">Manage Damaged/Expired Stock</a></li>
+<li><a class="link" href="#edit-product-details">Edit Product Details</a></li>
+<li><a class="link" href="#add-reorder-level">Add Reorder Level</a></li>
+<li><a class="link" href="#make-items-inactive">Make Items Inactive</a></li>
+<li><a class="link" href="#make-items-active">Make Items Active</a></li>
+<li><a class="link" href="#delete-item-from-inventory">Delete Item from Inventory</a></li>
+<li><a class="link" href="#manage-inventory">Manage Inventory</a></li>
+</ul>
+</div>
+<div class="cmfw"><a name="add-inventory"></a>
+<h2>Add Inventory</h2>
+<ol>
+<li>Navigate to Inventory</li>
+<li>Click on "Add inventory"<br /> <img title="Add Inventory" src="images/add-inventory.png" alt="Add Inventory" width="100%" /></li>
+<li>Select the "Group"<br /> <img title="Select Group" src="images/select-group.png" alt="Select Group" /></li>
+<li>Select the "Category"<br /> <img title="Select Category" src="images/select-category.png" alt="Select Category" /></li>
+<li>Search for the product by entering the product name or add a new product in the stock<br /> <img title="Search Product" src="images/search-product.png" alt="Search Product" /></li>
+<li>Enter the required stock details and click on "Save" button to add the stock to the inventory<br /> <img title="Add Stock Details" src="images/add-stock-details.png" alt="Add Stock Details" /></li>
+</ol></div>
+<div class="cmfw"><a name="import-inventory"></a>
+<h2>Import Inventory</h2>
+<ol>
+<li>Navigate to inventory</li>
+<li>Click on "Import / Export inventory" button<br /> <img title="Import Export Button" src="images/import-export-button.png" alt="Import Export Button" width="100%" /></li>
+<li>In the pop up window select "Import" option, select the category and upload the .csv file from local storage<br /> <img title="Import Inventory" src="images/import-inventory.png" alt="Import Inventory" /></li>
+<li>Click on submit button to import the inventory list<br />
+<p>Note:</p>
+<ul class="list">
+<li>Maximum file size allowed is 10 MB</li>
+<li>Maximum 500 entries can be imported</li>
+<li>Please select a Comma Separated Values file with data arranged in below format</li>
+<li>Product Name, Trade Name, Strength, Unit, Dose Form, Route, Pack, Manufacturer, Storage Location, Batch Number, Expiry Date (mm/dd/yyyy), Quantity, Reorder Level, Cost Price/Item, Retail Price/Item, Product ID, Order Quantity,Supplier Name,Tax Name,Ref. Number</li>
+<li>Fields marked with are mandatory</li>
+<li>To import Tax Name ensure that the Tax Name is configured under "Settings &gt;Billing&gt;Billing Settings&gt;Taxes" section</li>
+<li>Ensure that the file does not contain column names</li>
+</ul>
+</li>
+<li>Search for the product by entering the product name or add a new product in the stock</li>
+<li>Enter the required stock details and click on save button to save changes</li>
+</ol></div>
+<div class="cmfw"><a name="export-inventory-list"></a>
+<h2>Export Inventory List</h2>
+<ol>
+<li>Navigate to inventory</li>
+<li>Click on "Import / Export inventory" button<br /> <img title="Import Export Button" src="images/import-export-button.png" alt="Import Export Button" width="100%" /></li>
+<li>In the pop up window select Export option, category, status and appropriate export type<br /> <img title="Export Inventory" src="images/export-inventory.png" alt="Export Inventory" /></li>
+<li>Click on "Export" button to import the inventory list.<br />
+<p><strong>Note to select appropriate export type:</strong></p>
+<ul class="list">
+<li>All Stocks : This will export all products. If a product has multiple available stock quantity, it will export all of them. If a product does not have available stock quantity it will export latest stock details</li>
+<li>Available Stocks : This will export only products having available stock quantity greater than 0</li>
+<li>Reorder Products : This will export all the products that reached reorder level. Pack, Manufacturer, Storage Location, Batch Number, Expiry Date (mm/dd/yyyy), Cost Price/Item and Retail Price/Item are shown from latest stock of the products</li>
+</ul>
+</li>
+</ol></div>
+<div class="cmfw"><a name="view-stock-detail"></a>
+<h2>View Stock Detail</h2>
+<ol>
+<li>Navigate to Inventory</li>
+<li>Click on the gear icon and select "Stock Details" option<br /> <img title="View Stock Details" src="images/view-stock-details.png" alt="View Stock Details" width="100%" /></li>
+<li>On the next screen complete stock history will be displayed<br /> <img title="Stock Details" src="images/stock-details.png" alt="Stock Details" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="edit-stock-detail"></a>
+<h2>Edit Stock Detail</h2>
+<ol>
+<li>Navigate into stock details</li>
+<li>Click on the gear icon and select "Edit Stock Details" option<br /> <img title="Edit Stock Details" src="images/edit-stock-details.png" alt="Edit Stock Details" width="100%" /></li>
+<li>Edit the required details and click on "Update" button to save changes</li>
+</ol></div>
+<div class="cmfw"><a name="manage-damaged-stock"></a>
+<h2>Manage Damaged/Expired Stock</h2>
+<ol>
+<li>Navigate into stock details</li>
+<li>Click on the gear icon and select "Manage Damaged / Expired Stock" option<br /> <img title="Manage Damaged Stock" src="images/manage-damaged-stock.png" alt="Manage Damaged Stock" width="100%" /></li>
+<li>Enter the numbers of items that got damaged, expired and returned<br /> <img title="Manage Expired Stock" src="images/manage-expired-stock.png" alt="Manage Expired Stock" /></li>
+<li>Click on "Update" button to save changes</li>
+</ol></div>
+<div class="cmfw"><a name="edit-product-details"></a>
+<h2>Edit Product Details</h2>
+<ol>
+<li>Navigate to Inventory</li>
+<li>Click on the gear icon and select "Edit Product Details" option<br /> <img title="Edit Product Details" src="images/edit-product-details.png" alt="Edit Product Details" width="100%" /></li>
+<li>Changing the product name is not possible, but the user can update category, product id, tax, reorder level and order quantity<br /> <img title="Edit Product Details" src="images/edit-product-details1.png" alt="Edit Product Details" /></li>
+<li>Click on "Modify" button to save changes</li>
+</ol></div>
+<div class="cmfw"><a name="add-reorder-level"></a>
+<h2>Add Reorder Level</h2>
+<ol>
+<li>Navigate to Inventory</li>
+<li>Click on the gear icon and select "Add Reorder Level" option<br /> <img title="Reorder Level Option" src="images/reorder-level-option.png" alt="Reorder Level Option" width="100%" /></li>
+<li>Enter the required details<br /> <img title="Add Reorder Level" src="images/add-reorder-level.png" alt="Add Reorder Level" /></li>
+<li>click on "Add" button to save the changes</li>
+</ol></div>
+<div class="cmfw"><a name="make-items-inactive"></a>
+<h2>Make Items Inactive</h2>
+<ol>
+<li>Navigate to Inventory</li>
+<li>Click on the gear icon and select "Make Inactive" option<br /> <img title="Make Inventory Inactive" src="images/make-inventory-inactive.png" alt="Make Inventory Inactive" width="100%" /></li>
+<li>Click OK to confirm in the pop up window</li>
+</ol></div>
+<div class="cmfw"><a name="make-items-active"></a>
+<h2>Make Items Active</h2>
+<ol>
+<li>Navigate to Inventory</li>
+<li>Change status to inactive to view inactive items<br /> <img title="Change Inventory Status" src="images/change-inventory-status.png" alt="Change Inventory Status" width="100%" /></li>
+<li>Click on the gear icon and select "Make Inactive" option<br /> <img title="Make Inventory Active" src="images/make-inventory-active.png" alt="Make Inventory Active" width="100%" /></li>
+<li>Click OK to confirm in the pop up window</li>
+</ol></div>
+<div class="cmfw"><a name="delete-item-from-inventory"></a>
+<h2>Delete Item from Inventory</h2>
+<ol>
+<li>Navigate to Inventory</li>
+<li>Click on the gear icon and select "Delete InveNtory" option<br /> <img title="Delete Inventory" src="images/delete-inventory.png" alt="Delete Inventory" width="100%" /></li>
+<li>Click OK to confirm in the pop up window<br />
+<p><strong>Note: Only active items can be deleted</strong></p>
+</li>
+</ol></div>
+<div class="cmfw"><a name="manage-inventory"></a>
+<h2>Manage Inventory</h2>
+<ol>
+<li>Click on settings~&gt; Lab / Image / Rx~&gt; Manage Supplements and Drugs<br /> <img title="Manage Supplement Drugs" src="images/manage-supplement-drugs.png" alt="Manage Supplement Drugs" /></li>
+<li>Under "Supplements" and "Drugs" one can delete unavailable supplements and drugs<br /> <img title="Multiple Delete" src="images/multiple-delete.png" alt="Multiple Delete" width="100%" /></li>
+<li>For multiple record deletion use select boxes and click on "Delete" button<br /> <img title="Delete Multiple Record" src="images/delete-multiple-record.png" alt="Delete Multiple Record" width="100%" /><br />
+<p align="center">OR</p>
+<br /> <img title="Delete Single Record" src="images/delete-single-record.html" alt="Delete Single Record" width="100%" /></li>
+<li>For a single record deletion, select and delete can be used or click on "X" sign beside the product name to delete the record<br />
+<p><strong>Note: Use the search box to narrow the search result</strong></p>
+</li>
+</ol></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="cm-wd">
+    <span>&copy;<span id="header" class="mar0"></span> MedicalMine Inc. All rights reserved.</span>
+  </div>
+</footer>
+<script type="text/javascript" src="../../js/me-jquery.js"></script>
+<script>
+	$("#header").text( (new Date).getFullYear() );
+</script>
+<script>
+$('#bar1').addClass('selected');
+</script>
+
+</body>
+
+<!-- Mirrored from www.charmtracker.com/resources/inventory/manage-inventory.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:00:58 GMT -->
+</html>

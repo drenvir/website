@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.charmtracker.com/resources/billing/bluefin-payment-gateway.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:00:24 GMT -->
+<head>
+
+
+
+ 
+
+<title>ChARM EHR - Bluefin Patient Payment Gateway</title>
+<meta name="description" content="ChARM EHR supports Bluefin Payment Gateway to enable patient payments at the front office">
+<meta name="keywords" content="Card Payment, Patient Payment, Bluefin Payment, EHR Payment">
+	
+<link rel="SHORTCUT ICON" href="../../images/favicon.ico"/>
+<link rel="stylesheet" type="text/css"  href="../css/resources.css"/>
+
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="http://www.googletagmanager.com/ns.html?id=GTM-HDQM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-HDQM');</script> 
+<!-- End Google Tag Manager -->
+<header>
+  <div class="cm-wd">
+    <a href="../index.html"><img width="100" src="../images/logo.png" /></a>
+    <div class="fl hd">Resource Center</div>
+    <div class="fr">
+      <a target="_blank" href="https://twitter.com/charmtracker"><div class="t-icon"></div></a>
+      <a target="_blank" href="https://www.facebook.com/charmtracker"><div class="f-icon"></div></a>
+    </div>
+  </div>
+</header>
+<div class="header">
+  <div class="cm-wd">
+      	<h1>Billing</h1>
+		<div class="search-but">
+		<form id="cse-search-box" action="https://charmtracker.com/resources/search-results.html">
+		<div class="search-icon"></div>
+		<input type="text" placeholder="Search..." value="" class="newsearchbox fl" name="q">
+		</form>
+		</div>
+  </div>
+</div>
+ 
+<div class="cmfw content">
+     
+  <div class="cm-wd">	
+    <div class="content-list">
+      <ul id="menubar">
+	    <li id="bar1"><a title="Configure Bill Settings" href="bill-settings.html">Configure Bill Settings</a></li>
+		<li id="bar2"><a title="Configure Procedure Codes" href="procedure-codes.html">Configure Procedure Codes</a></li>
+		<li id="bar3"><a title="Configure Billing Templates" href="billing-templates.html">Configure Billing Templates</a></li>
+		<li id="bar4"><a title="Configure Payers" href="payers.html">Configure Payers</a></li>
+		<li id="bar5"><a title="Configure Billing Providers" href="billing-providers.html">Configure Billing Providers</a></li>
+		<li id="bar6"><a title="Generating Bills" href="generating-bills.html">Generating Bills</a></li>
+		<li id="bar7"><a title="Invoices" href="invoices.html">Invoices</a></li>
+		<li id="bar8"><a title="Receipts" href="receipts.html">Receipts</a></li>
+		<li id="bar9"><a title="Claims" href="claims.html">Claims</a></li>		
+        <li id="bar10"><a title="Bluefin Payment Gateway" href="bluefin-payment-gateway.html">Bluefin Payment Gateway</a></li>
+        <li id="bar11"><a title="Online Patient Payment" href="online-patient-payment.html">Online Patient Payment</a></li>
+      </ul>
+      <div class="leader">
+	  	<div align="center" class="cmfw">
+<div class="breadcrumb"><a class="link" href="../index.html">Home</a> &gt; <a class="link" href="../ehr-user-guide.html"> EHR User Guide</a> &gt; <span>Billing</span></div>
+</div>
+	  	<div class="cmfw mar-bot30">
+<h2>Bluefin Payment Gateway</h2>
+<p>ChARM EHR is now integrated with Bluefin Payment gateway so that practices can charge their patients from within the application, making the process efficient and reduce patient waiting time. This document describes the Patient Billing Process in ChARM EHR using credit or debit card. Biller or the front office staff designated to collect payments, are the expected users of this functionality.</p>
+<p>Payment is initiated either by swiping the Card in a Card reader attached to the computer on which ChARM EHR is running or keying in the card number directly in the Card field in the form. ChARM recommends usage of card reader as it is secure and error free. ChARM EHR does not store the card details, but just a reference ID provided by the Bluefin gateway.</p>
+<p>Please contact <a class="link" href="mailto:support@charmehr.com">support@charmehr.com</a> to get your Gateway Account.</p>
+</div>
+<div class="cmfw mar-bot30">
+<h2>Payment Gateway Transactions</h2>
+<p>ChARM EHR is integrated with Bluefin Payment gateway, which supports medical billing. The practice has to have a Merchant Account with Bluefin.</p>
+<p>Supported transactions are:</p>
+<ul class="list">
+<li><a class="link" href="#sale-transaction">Sale Transaction</a><ol>
+<li><a class="link" href="#sale-transaction-from-invoices">Sale transaction from Invoices</a></li>
+<li><a class="link" href="#sale-transaction-from-receipts">Sale transaction from Receipts</a></li>
+</ol></li>
+<li><a class="link" href="#store-card-on-file">Store Card On File</a></li>
+<li><a class="link" href="#delete-stored-card">Delete stored card</a></li>
+<li><a class="link" href="#refund-transaction">Refund Transaction</a></li>
+<li><a class="link" href="#recurring-payments">Recurring Payments</a></li>
+</ul>
+</div>
+<div class="cmfw mar-bot30"><a name="sale-transaction"></a>
+<h3>Sale Transaction:</h3>
+<p>Sale transaction is the operation in which one where the patent's card is charged for the services rendered.</p>
+<h3><em>Card on hand:</em></h3>
+<p>Steps to charge a patient debit/credit card when card is on hand.</p>
+<ol>
+<li>Go to Patient Dashboard by selecting the patient. Here one can view "Balance Due" for this patient.</li>
+<li>Click on "Make Payment" link.<img class="mar-tb10" title="Patient Balance Summary" src="images/patient-balance-summary.png" alt="Patient Balance Summary" width="100%" /></li>
+<li>In the form shown below choose beneficiary merchant account to which charge amount has to be credited.<img class="mar-tb10" style="margin-right: 35%;" title="Card Payment" src="images/card-payment.png" alt="Card Payment" width="65%" /></li>
+<li>Choose "Clear invoices automatically", if you want to apply the amount to this patient's invoices automatically.</li>
+<li>"Charge Card On File" option will be shown if card information is stored for this patient. By choosing this option, you can charge this card with out swiping.</li>
+<li>Swipe/key-in card details. You can use any Standard Card Reader for Swipe Card option. Alternatively, you can use Key-in option to manually key in card details.</li>
+<li>Enter amount to be charged from the patient.</li>
+<li>Choose "Store card information" if you want to register this card for future transaction also. This is same as storing card on file.</li>
+<li>Click Make Payment to charge the card. Upon successful transaction, the amount will be credited to the beneficiary merchant's account.</li>
+</ol>
+<p><em>Note: If one chooses "Clear invoices automatically", system will fetch all the patients invoices and clear them one by one by applying the amount till this amount becomes zero.</em></p>
+</div>
+<div class="cmfw mar-bot30"><a name="sale-transaction-from-invoices"></a>
+<h3>Sale transaction from Invoices:</h3>
+<p>Sale Transaction can also be initiated from Invoice Summary View.</p>
+<ol>
+<li>Go to Billing section &gt; Invoices and choose the Invoice. Then, click on the action icon on the right hand side. Click on "View Details" menu.</li>
+<li>In the Invoice Summary View one can see the Payment menu. Click on the Payment drop down menu and choose "Make Payment". Payment form will be shown.</li>
+<li>Choose the Beneficiary merchant account, Swipe/Key-in card details if card is not on file.</li>
+<li>Click "Make Payment" button to initiate the transaction. On successful transaction, charge amount will be credited to the beneficiary’s account and the invoice will be updated.<img class="mar-tb10" title="Invoice Summary" src="images/invoice-summary.png" alt="Invoice Summary" width="100%" /></li>
+<li>Payment receipt is generated automatically. It can be printed from the "Receipts" tab.</li>
+</ol></div>
+<div class="cmfw mar-bot30"><a name="sale-transaction-from-receipts"></a>
+<h3>Sale transaction from Receipts:</h3>
+<p>Sale Transaction can also be initiated from Receipts section.</p>
+<ol>
+<li>Go to Billing section &gt; Receipts and Click on "Add Payment".</li>
+<li>Choose the "Payment Method" as "Payment Gateway". Additional fields for providing card details will be shown along with available beneficiary accounts.<img class="mar-tb10" title="Add Payment Method" src="images/add-payment-method.png" alt="Add Payment Method" width="100%" /></li>
+<li>Choose the Beneficiary merchant account, Swipe/Key-in card details if card is not on file.<img class="mar-tb10" title="Add Payment" src="images/add-payment.png" alt="Add Payment" width="100%" /></li>
+<li>"Charge Card On File" option will be shown if card information is stored for this patient. By choosing this option, you can charge this card with out swiping.</li>
+<li>Swipe/key-in card details. You can use any Standard Card Reader for Swipe Card option. Alternatively, you can use Key-in option to manually key in card details.</li>
+<li>Enter amount to be charged from the patient.</li>
+<li>Choose "Store card details in Payment Gateway" if you want to register this card for future transaction also. This is same as storing card on file. If card information already exists on file, stored card details will be replaced with the new card information on successful transaction.</li>
+<li>Outstanding invoices for the patient will be listed. You can apply the amount to these invoices.</li>
+<li>Click "Add" button to initiate the transaction. On successful transaction, charge amount will be credited to the beneficiary's account and the invoices will be updated.</li>
+<li>Payment receipt will be generated for the amount charged on the card.</li>
+</ol></div>
+<div class="cmfw mar-bot30"><a name="store-card-on-file"></a>
+<h3>Store Card On File:</h3>
+<p>Using this feature provider’s office can register patient’s card info and map it with their Bluefin Merchant Account. Once registered provider can charge the card any number of times without entering card details. This will be useful for future billing.</p>
+<h3><em>Procedure to store card on file:</em></h3>
+<ol>
+<li>Go to patient's dashboard by selecting the Patient.</li>
+<li>Click on Store Card Info.<img class="mar-tb10" title="Store Card Info" src="images/store-card-info.png" alt="Store Card Info" width="100%" /></li>
+<li><span style="padding-right: 10%;">Choose the Beneficiary merchant account - Card information will be mapped to this beneficiary account. Amount will be transferred to this beneficiary for all transactions done using this Card on File.</span><img class="mar-tb10" style="margin-right: 35%;" title="Save Card Info" src="images/save-card-info.png" alt="Save Card Info" width="65%" /></li>
+<li>Swipe/Key-in the card details which needs to be registered. For 'Swipe Card' you can use standard card readers.<img class="mar-tb10" style="margin-right: 35%;" title="Key In Card Information" src="images/key-in-card-info.png" alt="Key In Card Information" width="65%" /></li>
+<li>If card reader is not available, Click on Key-in option and enter card details manually.</li>
+<li>Click Store. On successful transaction, Card information will be registered and mapped to the Patient. This registered card can be used for future transactions.</li>
+</ol><a style="float: left; width: 100%; height: 1px;" name="delete-stored-card"></a>
+<h3><em>Delete stored card:</em></h3>
+<p>Stored Card Info can be deleted by clicking on the Delete Card Info option provided in the Patient Dashboard.</p>
+<img class="mar-tb10" title="Delete Card Info" src="images/delete-card-info.png" alt="Delete Card Info" width="100%" /></div>
+<div class="cmfw mar-bot30"><a name="refund-transaction"></a>
+<h3>Refund Transaction:</h3>
+<p>This feature allows, provider’s office to refund (partial or full) the patient on sale transactions done using ChARM EHR Bluefin Payment Gateway. Only one refund is permitted per Sale Transaction.</p>
+<h3><em>Procedure to Refund:</em></h3>
+<ol>
+<li>Go to Billing &gt; Gateway Transactions. You can also go to patient specific billing view from the patient dashboard. Here all the Sale transactions done using Payment Gateway will be listed here.</li>
+<li>Choose the transaction to be refunded based on the Receipt number.</li>
+<li>Click on the action icon on right hand side. Select Payment Refund<img class="mar-tb10" title="Receipt View" src="images/receipt-view.png" alt="Receipt View" width="100%" /></li>
+<li><span style="padding-right: 20%;">Refund form by default shows the excess amount in the patient billing. You can modify the amount to be refunded manually. Refund amount should not exceed the Sale Transaction amount.</span><img class="mar-tb10" style="margin-right: 35%;" title="Refund Amount" src="images/refund-amount.png" alt="Refund Amount" width="65%" /></li>
+<li>Click Refund button to initiate the transaction. Upon success the specified amount will be refunded to the Patients credit or debit card account.</li>
+</ol>
+<p>Contact <a class="link" href="mailto:support@charmehr.com">support@charmehr.com</a> for any clarifications or queries.</p>
+</div>
+<div class="cmfw mar-bot30"><a name="recurring-payments"></a>
+<h3>Recurring Payments</h3>
+<p>ChARM EHR now allows you to charge a patient's credit card periodically. Our Recurring Payments module will make periodic collections seamless and efficient.</p>
+<h3><em>Supported functionalities include</em></h3>
+<ul class="list">
+<li><a class="link" href="#add-recurring-payments">Add Recurring Payments</a></li>
+<li><a class="link" href="#edit-recurring-payments">Edit Recurring Payments</a></li>
+<li><a class="link" href="#cancel-recurring-payments">Cancel Recurring Payments</a></li>
+</ul>
+</div>
+<div class="cmfw mar-bot30"><a name="add-recurring-payments"></a>
+<h3>Add Recurring Payments</h3>
+<p>Using Add Recurring Payments functionality, provider can create a recurring schedule for charging a card periodically. Steps for adding a recurring payments.</p>
+<ol>
+<li>Go to Billing &gt; Recurring Payments &gt; Add Recurring Payments.<img class="mar-tb10" title="Add Recurring Payments" src="images/add-recurring-payments.png" alt="Add Recurring Payments" width="75%" /></li>
+<li>Recurring Payments dialog will be shown. Search and select the patient for whom recurring payments needs to be added. Select Beneficiary</li>
+<li>Click on Recurring Payments, choose Recurring Schedule.</li>
+<li>Enter the card details (You can swipe the card or key-in the card details). Click on Charge Card On File, if you want to charge the card on file.</li>
+<li>Enter number of times to be charged in Recurring Count. Leave Recurring Count empty if you want to charge the card without stop.</li>
+<li>Select the Start Date from which card to be charged.</li>
+<li>Click Add. Recurring Payments will be added. You can view the details by clicking on the list.<img class="mar-tb10" title="Add Recurring Payments" src="images/add-recurring-payments1.png" alt="Add Recurring Payments" width="75%" /></li>
+</ol>
+<p><em><strong>Note : </strong> If recurring payments is created for new card, it will be enrolled with Bluefin. Page will be redirected to Bluefin. Upon successful enrollment recurring payments will be created.</em><br /> <em>Card will be charged for the amount as per schedule. Receipts for the payments will be created</em> <em>If the Clear invoices automatically is chosen, amount will be applied to the invoices.</em></p>
+</div>
+<div class="cmfw mar-bot30"><a name="edit-recurring-payments"></a>
+<h3>Edit Recurring Payments</h3>
+<p>Using this option provider can edit the recurring amount, change the recurring schedule, increase the recurring count.</p>
+<ol>
+<li>Go to Billing &gt; Recurring Payments. Click on the action icon on the right side of the Recurring Payments, click Edit.<img class="mar-tb10" title="Edit Recurring Payments" src="images/edit-recurring-payments.png" alt="Edit Recurring Payments" width="100%" /></li>
+<li>Edit dialog will be shown. Adjust the values. Click Update.<img class="mar-tb10" title="Edit Recurring Payments" src="images/edit-recurring-payments1.png" alt="Edit Recurring Payments" width="75%" /></li>
+</ol></div>
+<div class="cmfw mar-bot30"><a name="cancel-recurring-payments"></a>
+<h3>Cancel Recurring Payments</h3>
+<p>Using this option provider can stop the recurring payments.</p>
+<ol>
+<li>Go to Billing &gt; Recurring Payments. Click on the action icon on the right side of the Recurring Payments, click Cancel.<img class="mar-tb10" title="Cancel Recurring Payments" src="images/cancel-recurring-payments.png" alt="Cancel Recurring Payments" width="100%" /></li>
+<li>A warning message will be shown, click OK.</li>
+</ol>
+<p><em><strong>Note : </strong> More than one recurring payments can be added for a patient. Multiple recurring payments can be added using the same card on file.</em></p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="cm-wd">
+    <span>&copy;<span id="header" class="mar0"></span> MedicalMine Inc. All rights reserved.</span>
+  </div>
+</footer>
+<script type="text/javascript" src="../../js/me-jquery.js"></script>
+<script>
+	$("#header").text( (new Date).getFullYear() );
+</script>
+<script>
+$('#bar10').addClass('selected');
+</script>
+
+</body>
+
+<!-- Mirrored from www.charmtracker.com/resources/billing/bluefin-payment-gateway.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:00:31 GMT -->
+</html>

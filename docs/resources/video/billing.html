@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.charmtracker.com/resources/video/billing.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 10:59:23 GMT -->
+<head>
+
+
+ 
+
+
+<title>ChARM EHR - Billing Video</title>
+<meta name="description" content="ChARM EHR - Billing Video">
+<meta name="keywords" content="ChARM EHR Billing Video">
+
+<link rel="SHORTCUT ICON" href="../../images/favicon.ico"/>
+<link rel="stylesheet" type="text/css"  href="../css/resources.css"/>
+
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="http://www.googletagmanager.com/ns.html?id=GTM-HDQM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-HDQM');</script> 
+<!-- End Google Tag Manager -->
+<header>
+  <div class="cm-wd">
+    <a href="../index.html"><img width="100" src="../images/logo.png" /></a>
+    <div class="fl hd">Resource Center</div>
+    <div class="fr">
+      <a target="_blank" href="https://twitter.com/charmtracker"><div class="t-icon"></div></a>
+      <a target="_blank" href="https://www.facebook.com/charmtracker"><div class="f-icon"></div></a>
+    </div>
+  </div>
+</header>
+<div class="header">
+  <div class="cm-wd">
+    <h2><p>Video Tutorials</p></h2>	  
+	
+	<div class="search-but">
+	<form id="cse-search-box" action="https://charmtracker.com/resources/search-results.html">
+	<div class="search-icon"></div>
+	<input type="text" placeholder="Search..." value="" class="newsearchbox fl" name="q">
+	</form>
+	</div>
+
+  </div>
+</div>
+<div class="cmfw content">
+  <div class="cm-wd">
+    <div class="content-list">
+      <ul id="menubar">
+        <li id="bar1"><a title="ChARM EHR Overview" href="charm-ehr-overview.html">Overview</a></li>
+        <li id="bar2"><a title="Calendar" href="calendar.html">Calendar</a></li>
+        <li id="bar3"><a title="Medical Billing &amp; Claims" href="billing.html">Billing</a></li>
+        <li id="bar4"><a title="Patient Engagement" href="patient-engagement.html">Patient Engagement</a></li>
+        <li id="bar5"><a title="Facility Management" href="facility-management.html">Facility Management</a></li>
+        <li id="bar6"><a title="Physician SOAP Note Charting" href="soap-note-charting.html">Chart Note</a></li>
+        <li id="bar7"><a title="E Prescribing" href="erx.html">E Prescribing</a></li>
+        <li id="bar8"><a title="EHR Lab Integration" href="labs.html">Labs</a></li>
+        <li id="bar9"><a title="Documents" href="documents.html">Documents</a></li>
+      </ul>
+      <div class="leader">
+	  	<div align="center" class="cmfw">
+<div class="breadcrumb"><a class="link" href="../index.html">Home</a> &gt; Video Tutorials</div>
+</div>
+	  	<h2>Billing</h2>
+<div class="cmfw">
+<div class="cmfw50 mar-bot30">
+<div id="Billing_Overview" class="shadow-sml"><img width="270" height="175" class="img-brd" src="images/billing-overview.png" alt="Billing Overview" title="Billing Overview" /></div>
+<span class="cmfw90">Billing Overview</span></div>
+<div class="cmfw50 mar-bot30">
+<div id="Configure_Procedure_Codes" class="shadow-sml"><img width="270" height="175" class="img-brd" src="images/configure-procedure-codes.png" title="Configure Procedure Codes" alt="Configure Procedure Codes" /></div>
+<span class="cmfw90">Configure Procedure Codes</span></div>
+<div class="cmfw50 mar-bot30">
+<div id="Create_Superbill" class="shadow-sml"><img width="270" height="175" class="img-brd" src="images/create-superbill.png" title="Create Superbill" alt="Create Superbill" /></div>
+<span class="cmfw90">Create Superbill</span></div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----------- Video Container ------->
+<div align="center" style="display: none;" id="vContainer">
+  <div class="dialog-cmdiv" >
+    <div class="dialog-video">
+      <div class="cmfw">
+        <h3 class="dialog-hd" id="videoTitle"></h3>
+        <div class="plcl_icon"  id="vClose_Icon"></div>
+      </div>
+      <div class="img-brd iframe-div" id="popUpVideoContainar"> 
+        <!--IFRAME WILL BE LOAD HERE--> 
+      </div>
+    </div>
+  </div>
+</div>
+<!----------- Video Container -------> 
+<!----------- FreezeLayer ------->
+<div class="freezelayer" id="FreezeLayer"></div>
+<!----------- FreezeLayer ------->
+
+<footer>
+  <div class="cm-wd">
+    <span>&copy;<span id="header" class="mar0"></span> MedicalMine Inc. All rights reserved.</span>
+  </div>
+</footer>
+<script type="text/javascript" src="../../js/me-jquery.js"></script>
+<script type="text/javascript">
+	
+        $(document).ready(function(e) {
+			
+			var wid = $(window).width();
+			$(".dialog-cmdiv").css({"left" : (wid-760)/2 + "px"});          
+                  
+            $("#vClose_Icon").click(function(){
+                videoClosepopup();
+
+            });
+            
+            $('#FreezeLayer').click(function(){
+                videoClosepopup();
+        
+            })        
+            $(document).on('keydown',function(e){
+                keys=e.which;
+                if(keys==27)
+                {
+                    videoClosepopup();
+                }       
+            }) 
+        })
+        
+        function playVideo(vTitle,videoSource)
+        {            
+                $("#FreezeLayer").show();
+                $("#vContainer").show();
+                $("#videoTitle").html(vTitle);              
+                $('#popUpVideoContainar').html('<iframe frameborder="0" style="" width="700" height="400" allowfullscreen="true" src="'+videoSource+'"></iframe>');//NO I18N                
+        }
+		
+        function videoClosepopup()
+        {
+            $("#FreezeLayer").hide();
+            $("#vContainer").hide();
+            $("#videoTitle").html('');
+            $("#popUpVideoContainar").html('');
+        } 
+		 
+</script>
+<script>
+	$("#header").text( (new Date).getFullYear() );
+</script>
+<script>
+    $('#bar3').addClass('selected');
+</script>
+
+<script>
+$('#Billing_Overview').click(function() {
+                playVideo("Billing Overview","https://www.youtube.com/embed/RQM2V6V48PA?autoplay=1");
+            })
+            
+            $('#Configure_Procedure_Codes').click(function() {
+                playVideo("Configure Procedure Codes","https://www.youtube.com/embed/E-_nfUl06nc?autoplay=1");
+            })
+            
+            $('#Create_Superbill').click(function() {
+                playVideo("Create Superbill","https://www.youtube.com/embed/KpxXjaBvp9I?autoplay=1");
+            })
+</script>
+
+</body>
+
+<!-- Mirrored from www.charmtracker.com/resources/video/billing.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 10:59:25 GMT -->
+</html>
