@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui, maximum-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="SHORTCUT ICON" href="images/favicon.ico"/>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800" rel="stylesheet" type="text/css" />
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Hồ sơ y tế điện tử, Quản lý khám chữa bệnh, Thanh toán bảo hiểm, Chăm sóc khách hàng, bệnh nhân</title>
+<!-- InstanceEndEditable -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+
+<!-- InstanceBeginEditable name="keywords" -->
+<meta name="keywords" content="Hồ sơ y tế điện tử, Quản lý khám chữa bệnh, Thanh toán bảo hiểm, Chăm sóc khách hàng, bệnh nhân" />
+<meta name="description" content="Y tế số là dịch vụ số cho ngành y tế, mang đến trải nghiệm tuyệt vời cho các phòng khám tư nhân và các cơ sở khám chữa bệnh."/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+<!-- InstanceEndEditable -->
+
+<link href="css/charmtracker.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/me-jquery.js"></script>
+ 
+
+</head>
+
+<body class="charm-bg">
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("9442f2a853edcdb8323ee31aa8b5ec4e");</script><!-- end Mixpanel -->
+<header>
+  <div class="cm-wd top-pad0">
+    <a  href="index-2.html">
+      <span></span>
+    </a>
+    <ul class="topmenu">
+      <li><a href="#">
+        <span class="sign-button">Đăng nhập</span>
+      </a></li>
+      <li><a class="pad-r0" href="#">
+        <span class="signup-button">Đăng ký</span>
+      </a></li>
+      <li><a class="home-icon" href="index-2.html"></a></li>
+      <li>
+        <span class="menu-icon"></span>
+      </li>
+    </ul>
+    <ul class="topmenu1">
+      <li id="ProductsTab"><a href="#">Sản phẩm
+        <span class="down-arrow"></span></a>
+        <ul id="ProductList">
+          <li><a href="#C4">Hồ sơ y tế điện tử</a></li>
+          <li><a href="#">Quản lý khám chữa bệnh</a></li>
+		  <li><a href="#">Quản lý doanh thu</a></li>
+          <li><a href="#">Quản lý thông tin khách hàng</a></li>
+          <li><a href="#">Khám, tư vấn từ xa</a></li>
+        </ul>
+      </li>
+      <li id="ServicesTab"><a>Dịch vụ
+        <span class="down-arrow"></span></a>
+        <ul id="ServiceList">
+          <li><a href="#">Hỗ trợ cài đặt từ xa</a></li>
+          <li><a href="#">Hướng dẫn từ xa</a></li>
+          <li><a href="#">Chuyển dữ liệu cũ</a></li>
+        </ul>
+      </li>
+      <li><a href="ehr/ehr-pricing.html">Bảng giá</a></li>
+      <li><a href="#">Đối tác</a></li>
+    </ul>
+    
+  </div>
+</header>
+
+<div class="charm-menu">
+  <ul>
+    <li>
+      <ul class="sub-list">
+        <li><a href="#C4">Hồ sơ y tế điện tử</a></li>
+          <li><a href="#">Quản lý khám chữa bệnh</a></li>
+		  <li><a href="#">Quản lý doanh thu</a></li>
+          <li><a href="#">Quản lý thông tin khách hàng</a></li>
+          <li><a href="#">Khám, tư vấn từ xa</a></li>
+      </ul>
+    </li>
+    <li>
+      <ul class="sub-list">
+        <li><a href="#">Hỗ trợ cài đặt từ xa</a></li>
+          <li><a href="#">Hướng dẫn từ xa</a></li>
+          <li><a href="#">Chuyển dữ liệu cũ</a></li>
+      </ul>
+    </li>
+    <li><a href="#" target="_blank">Resources</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Partner Program</a></li>
+    <li><a href="#">News Room</a></li>
+    <li><a href="#">Testimonials</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</div>
+<div class="temp-freezelayer"></div>
+
+<!-- InstanceBeginEditable name="body" -->
+<div class="cmfw">
+  <section class="topcontent charm-topcontent">
+    <div class="social-site">
+      <a class="fb" href="https://www.facebook.com/hosodientu" target="_blank"><span></span></a>
+      <a class="tw" href="https://twitter.com/hosodientu" target="_blank"><span></span></a>
+      <a class="yt" href="https://www.youtube.com/hosodientu" target="_blank"><span></span></a>
+    </div>
+    <div class="cm-wd" align="center">
+      <div class="cmfw">
+        <h1 style="font-family:Arial, sans-serif !important; font-size: 35px">Giải pháp hiệu quả cho các bệnh viện</h1>
+      </div>
+      <div class="fl">
+        <div class="charm-banner">
+          <a href="#C4" class="ehr-icon"><i></i><span>Hồ sơ y tế điện tử</span></a>
+          <a href="#" class="pm-icon"><i></i><span>Quản lý khám chữa bệnh</span></a>
+          <a href="#" class="phr-icon"><i></i><span>Cổng thông tin Người bệnh</span></a>
+          <a href="#" class="telehealth-icon"><i></i><span>Khám, tư vấn từ xa</span></a>
+          
+        </div>
+        <div><a href="#" class="signup-button">Liên hệ: 0936.464.299</a></div>
+      </div>
+      <img src="images/banner-img.png" />
+      <div class="fr">
+        <div class="charm-banner">
+          <a href="#" class="rcm-icon"><i></i><span>Quản lý chi tiết doanh thu</span></a>
+          <a href="#" target="_blank" class="mbp-icon"><i></i><span>Kết nối LIS, PACs, QMAN</span></a>
+          <a href="#" target="_blank" class="connect-icon"><i></i><span>Liên thông các chi nhánh</span></a>
+          <a href="#" target="_blank" class="mobile-apps-icon"><i></i><span>Ứng dụng mobile</span></a>
+        </div>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home" id="features">
+    <div class="cm-wd">
+      <span class="sectionheading cmfw">Tại sao bạn chọn chúng tôi?</span>
+      <div class="cmfw mar-bot10">
+        <div class="content">
+          <h2>Giải pháp toàn diện</h2>
+          <p>Giải pháp quản lý bệnh viện toàn diện với các <strong>hệ thống liên thông</strong>, đảm nhận vai trò rõ ràng. Khả năng nâng cấp, mở rộng dễ dàng.
+		  </p>
+        </div>
+        <div class="content">
+          <h2>Dịch vụ cung cấp</h2>
+          <p>Cung cấp dịch vụ trên nền tảng điện toán đám mây, hiện đang duy trì cho <strong>hơn 30 cơ sở KCB từ tuyến 1 đến tuyến 4</strong>.</p>
+        </div>
+        <div class="content">
+          <h2>Triển khai và hỗ trợ</h2>
+          <p>Đội ngũ triển khai chuyên nghiệp, hỗ trợ sau triển khai 24/7, luôn lắng nghe và giải đáp mọi thắc mắc của khách hàng.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--<section id="simple-apps">
+    <div class="cm-wd" align="center">
+      <span class="sectionheading cmfw">SỬ DỤNG ĐƯỢC TRÊN ĐIỆN THOẠI, MÁY TÍNH BẢNG</span>
+      <div class="cmfw" id="apps">
+        <div id="img1" class="img show">
+          <div class="cmfw"><a name="Healthcare Mobile Apps" href="#" target="_blank"><img alt="Healthcare Mobile Apps" title="Healthcare Mobile Apps" src="images/healthcare-mobile-apps.png" /></a></div>
+          <a href="#" target="_blank" class="readmore"><span>More</span><i></i></a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section class="cmfw" id="homevideo">
+    <div class="cm-wd">
+      <i class="preview-video"></i>
+      <div align="center" id="video-slide">
+        <input type="hidden" id="currentvideo" name="currentvideo" value="video1">
+        <div class="cmfw video-list" id="video1" style="display:block;">
+          <span class="cmfw">Giải pháp toàn diện</span>
+          <div class="shadow-sml"><img width="550" height="305px" class="img-brd" src="images/slides/mohinhbv01.png" title="ChARM EHR Overview" alt="ChARM EHR Overview"></div>
+        </div>
+        <div class="cmfw video-list" id="video2">
+          <span class="cmfw">Tổng thể hệ thống</span>
+          <div class="shadow-sml"><img width="550" height="305px" class="img-brd" src="images/slides/mohinhbv02.png" title="ChARM EHR Overview" alt="ChARM EHR Overview"></div>
+        </div>
+        <div class="cmfw video-list" id="video3">
+          <span class="cmfw">Báo cáo quản trị tổng quan, chi tiết</span>
+          <div class="shadow-sml"><img width="550" height="305px" class="img-brd" src="images/slides/report01.jpg" title="ChARM EHR Overview" alt="ChARM EHR Overview"></div>
+        </div>
+        <div class="cmfw video-list" id="video4">
+          <span class="cmfw">Giao diện dễ sử dụng</span>
+          <div class="shadow-sml"><img width="550" height="305px" class="img-brd" src="images/slides/bssudung02.png" title="ChARM EHR Overview" alt="ChARM EHR Overview"></div>
+        </div>
+        <div class="cmfw video-list" id="video5">
+          <span class="cmfw">Sử dụng trên cả Mobile, Ipad, ...</span>
+          <div class="shadow-sml"><img width="550" height="305px" class="img-brd" src="images/slides/bssudung01.png" title="ChARM EHR Overview" alt="ChARM EHR Overview"></div>
+        </div>
+      </div><i class="next-video"></i>
+    </div>
+  </section>
+  <section id="features">
+    <div class="cm-wd">
+      <span class="sectionheading cmfw" id="C4">CHỨC NĂNG CHÍNH</span>
+      <div class="cmfw mar-bot10">
+        <div class="feature-col">
+          <div class="ehr-icon"></div>
+          <div class="content">
+            <h2>Quản lý khám chữa bệnh</h2>
+            <p>Quản lý quy trình khám chữa bệnh, thống kê báo cáo tình hình khám chữa bệnh dễ dàng.</p>
+          </div>
+        </div>
+        <div class="feature-col mar-r0">
+          <div class="document-icon"></div>
+          <div class="content">
+            <h2>Hồ sơ y tế</h2>
+            <p>Hồ sơ y tế gồm Bệnh án điện tử và Sổ y bạ điện tử. Bệnh án lưu trữ mang tính <strong>Online, Pháp lý và Duy nhất</strong>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cmfw mar-bot10">
+        <div class="feature-col">
+          <div class="template-icon"></div>
+          <div class="content">
+            <h2>Quản lý doanh thu</h2>
+            <p>Chỉ với một thiết bị kết nội mạng internet như Smartphone, Ipad, Tablet, Laptop, ... bạn có thể theo dõi được doanh thu của cơ sở khám chữa bệnh bất cứ lúc nào.</p>
+          </div>
+        </div>
+        <div class="feature-col mar-r0">
+          <div class="erx-icon"></div>
+          <div class="content">
+            <h2>Cổng thông tin người bệnh</h2>
+            <p>Khách hàng của bạn sẽ dễ dàng theo dõi lịch khám, các thông báo, đặt lịch khám tới bệnh viện. Thực hiện khám và tư vấn bệnh từ xa qua cổng thông tin người bệnh.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cmfw mar-bot10">
+        <div class="feature-col">
+          <div class="lab-icon"></div>
+          <div class="content">
+            <h2>Tích hợp với hệ thống LIS, PACs</h2>
+            <p>Tích hợp được với các hệ thống phần mềm quản lý máy xét nghiệm LIS và hệ thống chẩn đoán hình ảnh PACs.</p>
+          </div>
+        </div>
+        <div class="feature-col mar-r0">
+          <div class="clin-dec-sup-icon"></div>
+          <div class="content">
+            <h2>Hỗ trợ thanh toán bảo hiểm</h2>
+            <p>Nếu bạn muốn quản lý chuỗi các cơ sở y tế của mình, chúng tôi cung cấp giải pháp liên kết hệ thống các CSYT với nhau, để tiện lợi cho quản lý, chăm sóc người bệnh. Ngoài ra hệ thống cũng hỗ trợ quyết toán với bảo hiểm y tế.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  <section id="customerspeaks">
+    <div class="cm-wd">
+      <span class="sectionheading cmfw">CUSTOMER SPEAKS</span>
+      <div class="cmfw customer-speak">
+        <input type="hidden" value="testimonial1" id="curtestimonial">
+        <div class="cmfw mar-bot30">
+        <div class="cmfw">
+          <div class="fl"><img src="ehr/images/dr-rondeau.png"></div>
+          <div class="customer-home">
+            <div class="cmfw"> <b><span>Dr. Steve Rondeau, Wholeness Center, Colorado.</span></b> </div>
+            <p class="cmfw">ChARM EHR adapts to you instead of forcing you to adapt to a system that is lacking key features required for small to medium sized medical practices...</p>
+          </div>
+          </div>
+          <a href="ehr/testimonial.html#testimonial3" class="readmore"><span>Read more</span><i></i></a> 
+        </div>
+        <div class="cmfw mar-bot30">
+        <div class="cmfw">
+          <div class="fl"><img src="ehr/images/dr-hedayat.png"></div>
+          <div class="customer-home">
+            <div class="cmfw"> <b><span>Dr. Kamyar M. Hedayat, MD, Full Spectrum Health, California.</span></b> </div>
+            <p class="cmfw">I have a private practice in Endobiogeny, a form of integrative medicine. ChARM EHR was a natural choice for me. It allows me to stay in touch with my patients no matter where they or I am, around the world at any time...</p>
+          </div>
+          </div>
+          <a href="ehr/testimonial.html#testimonial4" class="readmore"><span>Read more</span><i></i></a>
+        </div>
+        <a class="link" href="ehr/testimonial.html">View All</a> </div>
+    </div>
+  </section>
+  -->
+  <!--<section id="pricing" class="cmfw">
+    <div class="cm-wd">
+      <span class="sectionheading cmfw">MIỄN PHÍ SỬ DỤNG BAN ĐẦU</span>
+      <div class="pricing-tab">
+        <div class="pric-txt">Miễn phí 100 Người bệnh<span>(1 tháng)</span>
+        <div class="cmfw mar-top20" align="center"><a title="" href="ehr/ehr-pricing.html">
+        <span class="signup-button">Sử dụng thêm</span>
+        </a></div>
+        </div>
+        <ul>
+          <li>Miễn phí với 100 Người bệnh / tháng</li>
+          <li>Miễn phí cổng thông tin người bệnh</li>        
+          <li>Hỗ trợ Người bệnh đặt lịch khám qua ứng dụng Mobile</li>
+        </ul>
+      </div>
+    </div>
+  </section>-->
+  
+  
+</div>
+
+<footer>
+  <div class="cm-wd">
+    <div class="footer1">
+      <h2>Sản phẩm</h2>
+      <ul>
+        <li><a href="ehr/index.html">Hồ sơ y tế điện tử</a></li>
+        <li><a href="practice-management/index.html">Quản lý khám chữa bệnh</a></li>
+		<li><a href="revenue-cycle-management/index.html">Quản lý doanh thu</a></li>
+        <li><a href="patient-engagement/index.html">Quản lý thông tin khách hàng</a></li>
+        <li><a href="https://www.charmtracker.com/telemedicine/index.html" target="_blank">Khám, tư vấn từ xa</a></li>
+      </ul>
+    </div>
+    <div class="footer2">
+      <h2>Dịch vụ</h2>
+      <ul>
+		<li><a href="ehr/training-registration.html">Hỗ trợ cài đặt từ xa</a></li>
+        <li><a href="ehr/online-support-session-request.html">Hướng dẫn từ xa</a></li>
+        <li><a href="ehr/switch-emr.html">Chuyển dữ liệu cũ</a></li>
+      </ul>
+    </div>
+    <div class="footer3">
+      <h2>Công ty</h2>
+      <ul>
+        <li><a href="aboutus.html">Về chúng tôi</a></li>
+        <li><a href="contactus.html">Liên hệ</a></li>
+        <li><a href="ehr/sitemap.html">Bản đồ website</a></li>
+      </ul>
+    </div>
+    <div class="footer4">
+      <h2>Trung tâm đào tạo</h2>
+      <ul>
+        <li><a href="resources/index.html" target="_blank">Tài liệu hướng dẫn</a></li>
+        <li><a href="ehr/reseller/reseller-benefits.html" target="_blank">Chương trình hợp tác</a></li>
+        <li><a href="ehr/ehr-trade-shows.html">News Room</a></li>
+        <li><a href="ehr/testimonial.html">Testimonials</a></li>
+      </ul>
+    </div>
+    <div class="footer5">
+      <h2>Kết nối với chúng tôi</h2>
+      <div class="cmfw">
+        <a href="https://www.facebook.com/ytesoa" target="_blank"><span class="f-icon"></span></a>
+        <a href="https://twitter.com/ytesoa" target="_blank"><span class="t-icon"></span></a>
+        <a href="https://www.youtube.com/ytesoa" target="_blank"><span class="y-icon"></span></a>
+		<ul>
+      <li>
+        <a href="javascript:;" title="">Tư vẫn miễn phí (24/7)</a>
+        <a href="javascript:;" title="" style="color: red;">Mr Nhất: 0989704519</a>
+        <a href="javascript:;" title="" style="color: red;">Mr Thắng: 0936464299</a> 
+      </li>
+		</ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="cm-wd"> <span>&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> ERM.,JSC. All rights reserved.</span> <a href="ehr/termsofservice.html">Terms of Service</a> <a href="privacy-policy.html">Privacy Policy</a> </div>
+  </div>
+</footer>
+
+<!-- InstanceBeginEditable name="beforeendofbody" -->
+
+<!--Crazy Egg Code Starts -->
+  	 <script type="text/javascript">
+	 mixpanel.track("Video play");
+  	 setTimeout(function(){var a=document.createElement("script");
+  	 var b=document.getElementsByTagName("script")[0];
+  	 a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0010/4746.js?"+Math.floor(new Date().getTime()/3600000);
+  	 a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  	 </script>
+<!-- Crazy Egg Code Ends -->
+     
+<!-- InstanceEndEditable -->
+
+</body>
+<script>
+var hei = $(window).height();
+$(".charm-menu").css({"height" : hei-67});
+$(window).resize(function(){
+	var wid = $(window).width();
+	var hei = $(window).height();
+	$(".charm-menu").css({"height" : hei-67});
+	if(930 < wid)
+	{
+		$('body').removeClass('show-sidebar');
+	}
+});
+$(".menu-icon").click(function(){
+	var element = $('body');
+	var bodyclass = element.attr("class");
+	
+	if(bodyclass == "charm-bg show-sidebar")
+	{
+		$('body').removeClass('show-sidebar');
+	}
+	else
+	{
+		$('body').addClass('show-sidebar');
+	}
+});
+
+//
+
+$("#ProductsTab").mouseover(function(){
+	$("#ProductList").show();
+});
+ $("#ProductsTab").mouseout(function(){
+	$("#ProductList").hide();
+}); 
+$("#ServicesTab").mouseover(function(){
+	$("#ServiceList").show();
+});
+ $("#ServicesTab").mouseout(function(){
+	$("#ServiceList").hide();
+});
+$("#ResourcesTab").mouseover(function(){
+	$("#ResourceList").show();
+});
+ $("#ResourcesTab").mouseout(function(){
+	$("#ResourceList").hide();
+});
+</script>
+
+<!-- InstanceBeginEditable name="bottomCont" -->
+<script type="text/javascript">
+	
+        $(document).ready(function(e) {
+			
+			var wid = $(window).width();
+			$(".dialog-cmdiv").css({"left" : (wid-760)/2 + "px"});          
+                  
+            $("#vClose_Icon").click(function(){
+                videoClosepopup();
+
+            });
+            
+            $('#FreezeLayer').click(function(){
+                videoClosepopup();
+        
+            })        
+            $(document).on('keydown',function(e){
+                keys=e.which;
+                if(keys==27)
+                {
+                    videoClosepopup();
+                }       
+            }) 
+        })
+        
+        function playVideo(vTitle,videoSource)
+        {            
+                $("#FreezeLayer").show();
+                $("#vContainer").show();
+                $("#videoTitle").html(vTitle);              
+                $('#popUpVideoContainar').html('<iframe frameborder="0" style="" width="700" height="400" allowfullscreen="true" src="'+videoSource+'"></iframe>');//NO I18N                
+        }
+		
+        function videoClosepopup()
+        {
+            $("#FreezeLayer").hide();
+            $("#vContainer").hide();
+            $("#videoTitle").html('');
+            $("#popUpVideoContainar").html('');
+        } 
+		 
+</script>
+<script>
+$('#ChARM-Promo').click(function() {
+                playVideo("ChARM Promo Video","https://www.youtube.com/embed/3Hm8vTWIV5k?autoplay=1");
+            })
+
+</script>
+<script>
+	if((navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i))) {
+		$(".social-site").css({'display' : 'none'});
+	}
+	else
+	{
+		$(".social-site").css({'display' : 'block'});
+	}
+</script>
+
+
+<script>
+var wid = $(window).width();
+if(750 < wid)
+{
+	$(".infographics-list").click(function (){
+		var imgVal = $(this).attr('id');
+		var imgInt = imgVal.split('info')[1];
+		
+		var src = $('#info'+imgInt + " img").attr('src');
+		
+		$(".freezelayer-black").css({"display" : "block"});
+		$(".infographics-view").css({"display" : "block"});
+		$(".info-close-icon").css({"display" : "block"});
+		$("body").addClass('overflow-hide');
+		
+		$(".infographics-view img").attr('src' , src);
+		
+	});
+	
+	function InfographicsClose()
+	{
+		$(".freezelayer-black").css({"display" : "none"});
+		$(".infographics-view").css({"display" : "none"});
+		$(".info-close-icon").css({"display" : "none"});
+		$("body").removeClass('overflow-hide');
+	}
+	
+	$(".info-close-icon").click(function (){
+		InfographicsClose();
+	});
+	$(document).on('keydown',function(e){
+		keys=e.which;
+		if(keys==27)
+		{
+			InfographicsClose();
+		}
+	});
+}
+
+
+</script>
+<script>
+$(".next-video").click(function () {
+	var beforeID = $("#currentvideo").attr("value");
+	var beforeintID = beforeID.split('video')[1];
+	
+	$(document.getElementById('video'+beforeintID)).animate(
+	{
+		left: "-100%",
+	}, 500,function() {
+			document.getElementById('video'+beforeintID).style.display='none';
+	})
+	
+	var temp = parseInt(beforeintID) + 1;
+	
+	if(temp > 5)
+	{
+		temp = 1
+	}
+	
+	$('#video'+temp).css({'left':'100%','display':'block'});
+	
+	$(document.getElementById('video'+temp)).animate(
+	{
+		left: "0px",
+	}, 500,function() {
+			document.getElementById('video'+beforeintID).style.display='none';
+	})
+	$("#currentvideo").attr("value","video"+temp);
+	
+});
+$(".preview-video").click(function () {
+	var beforeID = $("#currentvideo").attr("value");
+	var beforeintID = beforeID.split('video')[1];
+	
+	$(document.getElementById('video'+beforeintID)).animate(
+	{
+		left: "100%",
+	}, 500,function() {
+			document.getElementById('video'+beforeintID).style.display='none';
+	})
+	
+	var temp = parseInt(beforeintID) - 1;
+	
+	if(temp < 1)
+	{
+		temp = 5
+	}
+	
+	$('#video'+temp).css({'left':'-100%','display':'block'});
+	
+	$(document.getElementById('video'+temp)).animate(
+	{
+		left: "0px",
+	}, 500,function() {
+			document.getElementById('video'+beforeintID).style.display='none';
+	})
+	$("#currentvideo").attr("value","video"+temp);
+	
+});
+</script>
+
+</html>

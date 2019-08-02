@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.charmtracker.com/resources/billing/invoices.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:01:37 GMT -->
+<head>
+
+
+
+ 
+
+<title>ChARM EHR -  Invoicing for Practices</title>
+<meta name="description" content="ChARM EHR -  Invoicing for Practices">
+<meta name="keywords" content="Practice Invoices, Create Invoice, Edit Invoice, Cancel Invoice">
+	
+<link rel="SHORTCUT ICON" href="../../images/favicon.ico"/>
+<link rel="stylesheet" type="text/css"  href="../css/resources.css"/>
+
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="http://www.googletagmanager.com/ns.html?id=GTM-HDQM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-HDQM');</script> 
+<!-- End Google Tag Manager -->
+<header>
+  <div class="cm-wd">
+    <a href="../index.html"><img width="100" src="../images/logo.png" /></a>
+    <div class="fl hd">Resource Center</div>
+    <div class="fr">
+      <a target="_blank" href="https://twitter.com/charmtracker"><div class="t-icon"></div></a>
+      <a target="_blank" href="https://www.facebook.com/charmtracker"><div class="f-icon"></div></a>
+    </div>
+  </div>
+</header>
+<div class="header">
+  <div class="cm-wd">
+      	<h1>Billing</h1>
+		<div class="search-but">
+		<form id="cse-search-box" action="https://charmtracker.com/resources/search-results.html">
+		<div class="search-icon"></div>
+		<input type="text" placeholder="Search..." value="" class="newsearchbox fl" name="q">
+		</form>
+		</div>
+  </div>
+</div>
+ 
+<div class="cmfw content">
+     
+  <div class="cm-wd">	
+    <div class="content-list">
+      <ul id="menubar">
+	    <li id="bar1"><a title="Configure Bill Settings" href="bill-settings.html">Configure Bill Settings</a></li>
+		<li id="bar2"><a title="Configure Procedure Codes" href="procedure-codes.html">Configure Procedure Codes</a></li>
+		<li id="bar3"><a title="Configure Billing Templates" href="billing-templates.html">Configure Billing Templates</a></li>
+		<li id="bar4"><a title="Configure Payers" href="payers.html">Configure Payers</a></li>
+		<li id="bar5"><a title="Configure Billing Providers" href="billing-providers.html">Configure Billing Providers</a></li>
+		<li id="bar6"><a title="Generating Bills" href="generating-bills.html">Generating Bills</a></li>
+		<li id="bar7"><a title="Invoices" href="invoices.html">Invoices</a></li>
+		<li id="bar8"><a title="Receipts" href="receipts.html">Receipts</a></li>
+		<li id="bar9"><a title="Claims" href="claims.html">Claims</a></li>		
+        <li id="bar10"><a title="Bluefin Payment Gateway" href="bluefin-payment-gateway.html">Bluefin Payment Gateway</a></li>
+        <li id="bar11"><a title="Online Patient Payment" href="online-patient-payment.html">Online Patient Payment</a></li>
+      </ul>
+      <div class="leader">
+	  	<div class="cmfw" align="center">
+<div class="breadcrumb"><a class="link" href="../index.html">Home</a> &gt; <a class="link" href="../ehr-user-guide.html"> EHR User Guide</a> &gt; <span>Billing</span></div>
+</div>
+	  	<div class="cmfw mar-bot30">
+<h2>Invoices</h2>
+<ul class="list">
+<li><a class="link" href="#generating-an-invoice">Generating an Invoice</a></li>
+<li><a class="link" href="#invoice-with-encounter">Invoice With Encounter</a></li>
+<li><a class="link" href="#invoice-without-encounter">Invoice Without Encounter</a></li>
+</ul>
+<h2>Invoice Options</h2>
+<ul class="list">
+<li><a class="link" href="#submit-to-rcm">Submit to RCM</a></li>
+<li><a class="link" href="#creating-an-invoice">Creating an Invoice</a></li>
+<li><a class="link" href="#view-invoices">View Invoices</a></li>
+<li><a class="link" href="#edit-invoice">Edit Invoice</a></li>
+<li><a class="link" href="#print-invoice">Print Invoice</a></li>
+<li><a class="link" href="#send-invoice-to-patient">Send Invoice to Patient</a></li>
+<li><a class="link" href="#add-payment-write-off">Add Payment/Write-off</a></li>
+<li><a class="link" href="#make-payment">Make Payment</a></li>
+<li><a class="link" href="#open-in-template">Open in Template</a></li>
+<li><a class="link" href="#adjust-payments">Adjust Payments</a></li>
+<li><a class="link" href="#generate-claim">Generate Claim</a></li>
+<li><a class="link" href="#view-claims">View Claims</a></li>
+<li><a class="link" href="#cancel-invoice">Cancel Invoice</a></li>
+</ul>
+</div>
+<div class="cmfw"><a name="generating-an-invoice"></a>
+<h2>Generating an Invoice</h2>
+<ol>
+<li>Confirm the details related to Procedure and Products on Invoice</li>
+<li>Apply applicable taxes</li>
+<li>Check the payment options</li>
+<li>Get patient signature on invoice</li>
+<li>Click on Approve Invoice button to get the invoice approved<br /> <img title="Invoice Generated" src="images/invoice-generated.png" alt="Invoice Generated" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="invoice-with-encounter"></a>
+<h2>Invoice With Encounter</h2>
+<ol>
+<li>Navigate to Billing&gt; Generate encounter section</li>
+<li>Click on the gear icon associated with the encounter and select the option "New Invoice"<br /> <img title="Generating New Invoice" src="images/generating-new-invoice.png" alt="Generating New Invoice" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="invoice-without-encounter"></a>
+<h2>Invoice Without Encounter</h2>
+<ol>
+<li>Navigate to Billing&gt; Generate encounter section</li>
+<li>Click on Invoice without Encounter button<br /> <img title="Invoice Without Encounter" src="images/invoice-without-encounter.png" alt="Invoice Without Encounter" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="submit-to-rcm"></a>
+<h2>Submit to RCM</h2>
+<p>Once the invoice is generated providers can choose to submit that invoice for collecting money from the insurance company</p>
+<ol>
+<li>Navigate to Billing&gt; Generate Bills</li>
+<li>Select Encounters-not submitted to RCM</li>
+<li>Select the encounter(s) and click on Submit to RCM button else click on gear item and select the option Submit To RCM<br /> <img title="Submit to Rcm" src="images/submit-to-rcm1.png" alt="Submit to Rcm" width="100%" /><br /> <img title="Submit to Rcm" src="images/submit-to-rcm2.png" alt="Submit to Rcm" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="creating-an-invoice"></a>
+<h2>Creating an Invoice</h2>
+<ol>
+<li>Navigate to billing</li>
+<li>Change selection to encounters for billing</li>
+<li>Click on the gear icon and select the option "New Invoice"<br /> <img title="Generating New Invoice" src="images/generating-new-invoice.png" alt="Generating New Invoice" width="100%" /></li>
+<li>Add all the procedure and prescription into the Invoice</li>
+<li>Select appropriate Payment Information<br /> <img title="Approve Invoice" src="images/approve-invoice.png" alt="Approve Invoice" width="100%" /></li>
+<li>Click on Approve button to approve the invoice</li>
+</ol></div>
+<div class="cmfw"><a name="view-invoices"></a>
+<h2>View Invoices</h2>
+<p>Opens the invoice in new window where detailed information can be seen for the selected invoice</p>
+<ol>
+<li>Navigate to billing</li>
+<li>Click on Invoice section</li>
+<li>Click on the gear icon and select the View option<br /> <img title="View Invoice" src="images/view-invoice.png" alt="View Invoice" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="edit-invoice"></a>
+<h2>Edit Invoice</h2>
+<p>User can choose this option to add or delete items from invoice to be billed</p>
+<ol>
+<li>Navigate to billing</li>
+<li>Click on Invoice section<br /> <img title="Edit Invoice" src="images/edit-invoice.png" alt="Edit Invoice" width="100%" /></li>
+<li>Click on the gear icon and select the Edit option<br /> <img title="Edit Invoice" src="images/edit-invoice1.png" alt="Edit Invoice" width="100%" /></li>
+<li>Edit the required details</li>
+<li>Click on Approve Invoice to save the changes</li>
+</ol></div>
+<div class="cmfw"><a name="open-in-template"></a>
+<h2>Open in Template</h2>
+<p>User can choose this option to add or delete items from invoice to be billed</p>
+<ol>
+<li>Navigate to billing</li>
+<li>Click on Invoice section<br /> <img title="Open in Template" src="images/open-in-template.png" alt="Open in Template" width="100%" /></li>
+<li>Click on the gear icon and select Open In Template</li>
+<li>Select the template and click Ok to save selection<br /> <img title="Open in Template" src="images/open-in-template1.png" alt="Open in Template" /></li>
+<li>Click on Print for print preview<br /> <img title="Open in Template" src="images/open-in-template2.png" alt="Open in Template" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="print-invoice"></a>
+<h2>Print Invoice</h2>
+<p>Printing can be done in a specific format by choosing the appropriate format from the print drop down it applies to bulk printing where as one can choose to open single invoice in desired Template and get the invoice printed</p>
+<ol>
+<li>Navigate to billing</li>
+<li>Click on Invoice section</li>
+<li>Click on the gear icon and select the Print option<br /> <img title="Print Invoice" src="images/print-invoice.png" alt="Print Invoice" width="100%" /></li>
+<li>Click Print button on invoice to print the Invoice</li>
+</ol></div>
+<div class="cmfw"><a name="send-invoice-to-patient"></a>
+<h2>Send Invoice to Patient</h2>
+<p>Invoice can be sent to the patient once the invoice is generated. It can be sent on email address or the PHR account, if PHR account is not created then invoice will be sent on email address registered with the provider the invoice sent will be password protected</p>
+<ol>
+<li>Navigate to billing</li>
+<li>Click on Invoice section<br /> <img title="Send Invoice" src="images/send-invoice.png" alt="Send Invoice" width="100%" /></li>
+<li>Click on the gear icon and select the Send Invoice option</li>
+<li>Select where to send the invoice in PHR or email<br /> <img title="Send Invoice" src="images/send-invoice1.png" alt="Send Invoice" width="100%" /></li>
+<li>Attach the files if any</li>
+<li>Click on Send button</li>
+</ol></div>
+<div class="cmfw"><a name="add-payment-write-off"></a>
+<h2>Add Payment/Write-off</h2>
+<p>Add cash to your due amount or provide write off against the dues or payment</p>
+<ol>
+<li>Navigate to billing</li>
+<li>Click on Invoice section<br /> <img title="Add Payment Write-off" src="images/add-payment-write-off.png" alt="Add Payment Write-off" width="100%" /></li>
+<li>Click on the gear icon and select the Add Payment / Write-off option<br /> <img title="Add Payment to Invoice" src="images/add-payment-to-invoice.png" alt="Add Payment to Invoice" width="100%" /></li>
+<li>Edit the required details</li>
+<li>Click on Add button to save the changes</li>
+</ol></div>
+<div class="cmfw"><a name="make-payment"></a>
+<h2>Make Payment</h2>
+<p>If the payment is due or partially paid then this option will be available to add a payment</p>
+<ol>
+<li>Navigate to billing</li>
+<li>Click on Invoice section<br /> <img title="Make Payment" src="images/make-payment.png" alt="Make Payment" width="100%" /></li>
+<li>Click on the gear icon and select Make Payment option</li>
+<li>Edit the required details<br /> <img title="Make Payment" src="images/make-payment1.png" alt="Make Payment" width="100%" /></li>
+<li>Click on Add button to save the changes</li>
+</ol></div>
+<div class="cmfw"><a name="adjust-payments"></a>
+<h2>Adjust Payments</h2>
+<p>Unused payment can be adjusted against current invoice and one can provide discount which will come under write-off</p>
+<p>Against Paid invoice we can adjust the the payment and we can edit write-off if there was any at the time of payment</p>
+<ol>
+<li>Navigate to billing</li>
+<li>Click on Invoice section<br /> <img title="Adjust Payment Write-off" src="images/adjust-payment-write-off.png" alt="Adjust Payment Write-off" width="100%" /></li>
+<li>Click on the gear icon and select the Adjust Payment / Edit Write-off option<br /> <img title="Adjust Payment Write-off" src="images/adjust-payment-write-off1.png" alt="Adjust Payment Write-off" width="100%" /></li>
+<li>Click on Edit link beside the payment</li>
+<li>Edit the required details<br /> <img title="Adjust Payment Write-off" src="images/adjust-payment-write-off2.png" alt="Adjust Payment Write-off" width="100%" /></li>
+<li>Click on Add button to save the changes</li>
+</ol></div>
+<div class="cmfw"><a name="generate-claim"></a>
+<h2>Generate Claim</h2>
+<p>User can request for a claim if the patient wishes their insurance company to be billed</p>
+<ol>
+<li>Navigate to Billing</li>
+<li>Click on Invoice section<br /> <img title="Generate Claim" src="images/generate-claim.png" alt="Generate Claim" width="100%" /></li>
+<li>Click on the gear icon and select Generate Claim option<br /> <img title="Generate Claim" src="images/generate-claim1.png" alt="Generate Claim" width="100%" /></li>
+<li>Verify the details and click finish to generate the claim</li>
+</ol></div>
+<div class="cmfw"><a name="view-claims"></a>
+<h2>View Claims</h2>
+<p>If the claim is submitted successfully then one can view the claim</p>
+</div>
+<div class="cmfw"><a name="cancel-invoice"></a>
+<h2>Cancel Invoice</h2>
+<p>If there is no partial payment on an invoice and no write-off then one can cancel the Invoice else first make write to zero using edit function and void the payment</p>
+<ol>
+<li>Navigate to billing</li>
+<li>Click on Invoice section<br /> <img title="Cancel Invoice" src="images/cancel-invoice.png" alt="Cancel Invoice" width="100%" /></li>
+<li>Click on the gear icon and select Cancel Invoice option<br /> <img title="Cancel Invoice Comments" src="images/cancel-invoice-comments.png" alt="Cancel Invoice Comments" /></li>
+<li>Give a reason for the cancellation of the invoice</li>
+<li>Click Ok to confirm</li>
+</ol></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="cm-wd">
+    <span>&copy;<span id="header" class="mar0"></span> MedicalMine Inc. All rights reserved.</span>
+  </div>
+</footer>
+<script type="text/javascript" src="../../js/me-jquery.js"></script>
+<script>
+	$("#header").text( (new Date).getFullYear() );
+</script>
+<script>
+$('#bar7').addClass('selected');
+</script>
+
+</body>
+
+<!-- Mirrored from www.charmtracker.com/resources/billing/invoices.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:01:49 GMT -->
+</html>

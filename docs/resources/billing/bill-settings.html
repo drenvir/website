@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.charmtracker.com/resources/billing/bill-settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:00:58 GMT -->
+<head>
+
+
+
+ 
+
+<title>ChARM EHR - Billing Settings</title>
+<meta name="description" content="ChARM EHR - Billing Settings">
+<meta name="keywords" content="Bill Settings, Billing Settings">
+	
+<link rel="SHORTCUT ICON" href="../../images/favicon.ico"/>
+<link rel="stylesheet" type="text/css"  href="../css/resources.css"/>
+
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="http://www.googletagmanager.com/ns.html?id=GTM-HDQM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-HDQM');</script> 
+<!-- End Google Tag Manager -->
+<header>
+  <div class="cm-wd">
+    <a href="../index.html"><img width="100" src="../images/logo.png" /></a>
+    <div class="fl hd">Resource Center</div>
+    <div class="fr">
+      <a target="_blank" href="https://twitter.com/charmtracker"><div class="t-icon"></div></a>
+      <a target="_blank" href="https://www.facebook.com/charmtracker"><div class="f-icon"></div></a>
+    </div>
+  </div>
+</header>
+<div class="header">
+  <div class="cm-wd">
+      	<h1>Billing</h1>
+		<div class="search-but">
+		<form id="cse-search-box" action="https://charmtracker.com/resources/search-results.html">
+		<div class="search-icon"></div>
+		<input type="text" placeholder="Search..." value="" class="newsearchbox fl" name="q">
+		</form>
+		</div>
+  </div>
+</div>
+ 
+<div class="cmfw content">
+     
+  <div class="cm-wd">	
+    <div class="content-list">
+      <ul id="menubar">
+	    <li id="bar1"><a title="Configure Bill Settings" href="bill-settings.html">Configure Bill Settings</a></li>
+		<li id="bar2"><a title="Configure Procedure Codes" href="procedure-codes.html">Configure Procedure Codes</a></li>
+		<li id="bar3"><a title="Configure Billing Templates" href="billing-templates.html">Configure Billing Templates</a></li>
+		<li id="bar4"><a title="Configure Payers" href="payers.html">Configure Payers</a></li>
+		<li id="bar5"><a title="Configure Billing Providers" href="billing-providers.html">Configure Billing Providers</a></li>
+		<li id="bar6"><a title="Generating Bills" href="generating-bills.html">Generating Bills</a></li>
+		<li id="bar7"><a title="Invoices" href="invoices.html">Invoices</a></li>
+		<li id="bar8"><a title="Receipts" href="receipts.html">Receipts</a></li>
+		<li id="bar9"><a title="Claims" href="claims.html">Claims</a></li>		
+        <li id="bar10"><a title="Bluefin Payment Gateway" href="bluefin-payment-gateway.html">Bluefin Payment Gateway</a></li>
+        <li id="bar11"><a title="Online Patient Payment" href="online-patient-payment.html">Online Patient Payment</a></li>
+      </ul>
+      <div class="leader">
+	  	<div class="cmfw" align="center">
+<div class="breadcrumb"><a class="link" href="../index.html">Home</a> &gt; <a class="link" href="../ehr-user-guide.html"> EHR User Guide</a> &gt; <span>Billing</span></div>
+</div>
+	  	<div class="cmfw mar-bot30">
+<h2>Configure Bill Settings</h2>
+<ul class="list">
+<li><a class="link" href="#currency-settings">Currency Settings</a></li>
+<li><a class="link" href="#invoice-settings">Invoice Settings</a></li>
+<li><a class="link" href="#configuring-invoice-number-format">Configuring Invoice Number Format</a></li>
+<li><a class="link" href="#configuring-receipt-number-format">Configuring Receipt Number Format</a></li>
+<li><a class="link" href="#configuring-payment-method">Configuring Payment Method</a></li>
+<li><a class="link" href="#edit-payment-method">Edit Payment Method</a></li>
+<li><a class="link" href="#delete-payment-method">Delete Payment Method</a></li>
+<li><a class="link" href="#configuring-adjustment-type">Configuring Adjustment Type</a></li>
+<li><a class="link" href="#edit-adjustment-type">Edit Adjustment Type</a></li>
+<li><a class="link" href="#delete-adjustment-type">Delete Adjustment Type</a></li>
+<li><a class="link" href="#configuring-write-off-type">Configuring Write-Off Type</a></li>
+<li><a class="link" href="#edit-write-off-type">Edit Write-off Type</a></li>
+<li><a class="link" href="#delete-write-off-type">Delete Write-off Type</a></li>
+<li><a class="link" href="#configuring-receipt-settings">Configuring Receipt Settings</a></li>
+<li><a class="link" href="#configuring-claim-status-list">Configuring Claim Status List</a></li>
+<li><a class="link" href="#edit-claim-status-type">Edit Claim Status Type</a></li>
+<li><a class="link" href="#delete-claim-status-type">Delete Claim Status Type</a></li>
+<li><a class="link" href="#configuring-tax">Configuring Tax</a></li>
+<li><a class="link" href="#edit-tax">Edit Tax</a></li>
+<li><a class="link" href="#delete-tax">Delete Tax</a></li>
+</ul>
+</div>
+<div class="cmfw"><a name="currency-settings"></a>
+<h2>Currency Settings</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings<br /> <img title="Settings" src="images/settings.png" alt="Settings" width="100%" /><br /> <img title="Bill Setting" src="images/bill-setting.png" alt="Bill Setting" /></li>
+<li>Under currency Setting enter the currency code and currency symbol<br /> <img title="Currency Setting" src="images/currency-setting.png" alt="Currency Setting" width="100%" /></li>
+<li>Click on "Save" button to save changes</li>
+</ol></div>
+<div class="cmfw"><a name="invoice-settings"></a>
+<h2>Invoice Settings</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Invoice Settings", you can do the following:
+<ul class="list">
+<li>select the default invoice template</li>
+<li>select how to display the total</li>
+<li>opt to select the primary insurance by default</li>
+<li>auto select Dx pointers</li>
+<li>set pay invoice in full by default</li>
+<li>set pay products in full by default</li>
+<li>print patient signature on invoice or bill</li>
+<li>show notes on invoice or bill as well as the terms and condition on the bill</li>
+<li>opt to send invoice by default on patient email or PHR portal</li>
+</ul>
+<br /> <img title="Invoice Settings" src="images/invoice-settings.png" alt="Invoice Settings" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="configuring-invoice-number-format"></a>
+<h2>Configuring Invoice Number Format</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Invoice Number Format" enter the format and starting number for the invoices<br /> <img title="Choose Facility" src="images/choose-facility.png" alt="Choose Facility" width="100%" /></li>
+<li>Click on "Save" button to save changes<br />
+<p><strong>Note: Configure invoice number format for all the facilities</strong></p>
+</li>
+</ol></div>
+<div class="cmfw"><a name="configuring-receipt-number-format"></a>
+<h2>Configuring Receipt Number Format</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Receipt Number Format" enter the format and starting number for receipts<br /> <img title="Receipt Number Format" src="images/receipt-number-format.png" alt="Receipt Number Format" width="100%" /></li>
+<li>Click on "Save" button to save changes<br />
+<p><strong>Note: Please configure receipt number format for all the facilities</strong></p>
+</li>
+</ol></div>
+<div class="cmfw"><a name="configuring-payment-method"></a>
+<h2>Configuring Payment Method</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Payment Methods" click on "Add Payment Method" button to add a payment method<br /> <img title="Add Payment Method" src="images/add-payment-method1.png" alt="Add Payment Method" /></li>
+</ol></div>
+<div class="cmfw"><a name="edit-payment-method"></a>
+<h2>Edit Payment Method</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Payment Methods" click on the gear icon and select "Edit" option to edit a payment method<br /> <img title="Edit Payment Method" src="images/edit-payment-method.png" alt="Edit Payment Method" width="100%" /></li>
+<li>Click on "Update" button to save changes<br /> <img title="Update Payment Method" src="images/update-payment-method.png" alt="Update Payment Method" /></li>
+</ol></div>
+<div class="cmfw"><a name="delete-payment-method"></a>
+<h2>Delete Payment Method</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Click on the gear icon and select "Delete" option to delete a payment method<br /> <img title="Delete Payment Method" src="images/delete-payment-method.png" alt="Delete Payment Method" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="configuring-adjustment-type"></a>
+<h2>Configuring Adjustment Type</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under Adjustment Types click on "Add Adjustment Type" button to add an adjustment type<br /> <img title="Add Adjustment Type" src="images/add-adjustment-type.png" alt="Add Adjustment Type" /></li>
+</ol></div>
+<div class="cmfw"><a name="edit-adjustment-type"></a>
+<h2>Edit Adjustment Type</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under Adjustment type click on the gear icon and select "Edit" option to edit an Adjustment type</li>
+<li>Update the details and click on Update button to save changes<br /> <img title="Update Adjustment Type" src="images/update-adjustment-type.png" alt="Update Adjustment Type" /></li>
+</ol></div>
+<div class="cmfw"><a name="delete-adjustment-type"></a>
+<h2>Delete Adjustment Type</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Adjustment Types" click on the gear icon and select Delete option to delete an adjustment type<br /> <img title="Delete Adjustment Type" src="images/edit-delete-adjustment-type.png" alt="Delete Adjustment Type" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="configuring-write-off-type"></a>
+<h2>Configuring Write-Off Type</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Write-off Types" click on "Add Write-off Type" button to add a write-off type<br /> <img title="Add Write off Type" src="images/add-write-off-type.png" alt="Add Write off Type" /></li>
+</ol></div>
+<div class="cmfw"><a name="edit-write-off-type"></a>
+<h2>Edit Write-off Type</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Write-off Types" click on the gear icon against the item to be edited and select "Edit" option to edit a write-off type</li>
+<li>Update the details and click on Update button to save changes<br /> <img title="Edit Write off Type" src="images/edit-write-off-type.png" alt="Edit Write off Type" /></li>
+</ol></div>
+<div class="cmfw"><a name="delete-write-off-type"></a>
+<h2>Delete Write-off Type</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under Write-off Types click on the gear icon and select Delete option to delete a write-off type<br /> <img title="Delete Write off" src="images/delete-write-off.png" alt="Delete Write off" width="100%" /></li>
+</ol></div>
+<div class="cmfw"><a name="configuring-receipt-settings"></a>
+<h2>Configuring Receipt Settings</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Receipt Settings" select the default payment method, default adjustment type, default write-off type and auto adjust for unused payment from past receipts<br /> <img title="Receipt Settings" src="images/receipt-settings.png" alt="Receipt Settings" width="100%" /></li>
+<li>Click on "Save" button to save changes</li>
+</ol></div>
+<div class="cmfw"><a name="configuring-claim-status-list"></a>
+<h2>Configuring Claim Status List</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Claim Status List" click on "Add Claim Status" button to add a Claim Status</li>
+<li>Give a name and click on "Add" button to save newly added claim status<br /> <img title="Add Claim Status Type" src="images/add-claim-status-type.png" alt="Add Claim Status Type" /></li>
+</ol></div>
+<div class="cmfw"><a name="edit-claim-status-type"></a>
+<h2>Edit Claim Status Type</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Claim Status List" click on the gear icon and select Edit option to edit a claim status<br /> <img title="Edit Claim Status Type" src="images/edit-claim-status.png" alt="Edit Claim Status Type" width="100%" /></li>
+<li>Update the details and click on Update button to save changes<br /> <img title="Edit Claim Status Type" src="images/edit-claim-status-type.png" alt="Edit Claim Status Type" /><br />
+<p><strong>Note: Only manually added claim status can be deleted or edited</strong></p>
+</li>
+</ol></div>
+<div class="cmfw"><a name="delete-claim-status-type"></a>
+<h2>Delete Claim Status Type</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Claim Status List" click on the gear icon and select Delete option to delete a claim status<br /> <img title="Delete Claim Status" src="images/delete-claim-status.png" alt="Delete Claim Status" width="100%" /><br />
+<p><strong>Note: Only manually added claim status can be deleted or edited</strong></p>
+</li>
+</ol></div>
+<div class="cmfw"><a name="configuring-tax"></a>
+<h2>Configuring Tax</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Taxes", click on "Add Tax" button to add a tax and make sure that the correct facility is selected<br /> <img title="Add Tax" src="images/add-tax.png" alt="Add Tax" width="100%" /></li>
+<li>Give a name to the Tax and percentage of Tax applicable. Click on "Add" button to save newly added Tax<br /> <img title="Add Facility Tax" src="images/add-facility-tax.png" alt="Add Facility Tax" /></li>
+</ol></div>
+<div class="cmfw"><a name="edit-tax"></a>
+<h2>Edit Tax</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Taxes", click on the gear icon and select "Edit" option to edit a Tax</li>
+<li>Update the details and click on "Update" button to save changes<br /> <img title="Edit Facility Tax" src="images/edit-facility-tax.png" alt="Edit Facility Tax" /></li>
+</ol></div>
+<div class="cmfw"><a name="delete-tax"></a>
+<h2>Delete Tax</h2>
+<ol>
+<li>Click on Settings ~&gt; Billing ~&gt; Billing Settings</li>
+<li>Under "Taxes", click on the gear icon and select Delete option to delete a tax<br /> <img title="Delete Tax" src="images/delete-tax.png" alt="Delete Tax" width="100%" /></li>
+</ol></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="cm-wd">
+    <span>&copy;<span id="header" class="mar0"></span> MedicalMine Inc. All rights reserved.</span>
+  </div>
+</footer>
+<script type="text/javascript" src="../../js/me-jquery.js"></script>
+<script>
+	$("#header").text( (new Date).getFullYear() );
+</script>
+<script>
+$('#bar1').addClass('selected');
+</script>
+
+</body>
+
+<!-- Mirrored from www.charmtracker.com/resources/billing/bill-settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2016 11:01:05 GMT -->
+</html>
